@@ -23,6 +23,18 @@ public class EnglishLanguage : MainLanguage
     public override string MenuMedium => "2. Medium";
     public override string MenuFast => "3. Fast";
     public override string AllChangesAccepted => "All changes have been accepted, restart the application to apply!";
+    public override string LetsStart =>
+        $", let's get started!{Environment.NewLine}You are provided with convenient software for working with library data. " +
+        $"Here you can filter the list of books by various criteria,{Environment.NewLine}change information about books " +
+        $"and notify people on the waiting list about the possibility of taking a particular book.";
+    public override string EnterInputFilePath =>
+        "For the program to work correctly, enter the path to the library data file..."; 
+    public override string EnterOutputFilePath =>
+        "For the program to work correctly, enter the path to the folder for the output data. The output file will be created automatically..."; 
+    public override string FilePathIsEmpty => "The resulting file path is empty!";
+    public override string FileNotFound => "The file in the specified path does not exist!";
+    public override string DirectoryPathIsEmpty => "The resulting directory path is empty!";
+    public override string DirectoryNotFound => "The directory in the specified path does not exist!";
 
     public override string ToString()
     {

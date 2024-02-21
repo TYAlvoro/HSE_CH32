@@ -34,7 +34,22 @@ public static class MenuPrinter
             SetSettings(printingImitator, settings);
         }
 
-       // Console.Clear();
+        Console.Clear();
+        ShowInformation(printingImitator, settings);
+
+    }
+
+    private static void ShowInformation(PrintingImitator printingImitator, Settings settings)
+    {
+        Console.ForegroundColor = settings.ColorScheme.MainColor;
+        printingImitator.Print(settings.UserName + settings.ProgramLanguage.LetsStart);
+        Console.ForegroundColor = settings.ColorScheme.OkColor;
+        printingImitator.Print(settings.ProgramLanguage.EnterInputFilePath);
+        string inputFilePath = UserCommunication.GetFilePath(printingImitator, settings, true);
+        Console.Clear();
+        Console.ForegroundColor = settings.ColorScheme.OkColor;
+        printingImitator.Print(settings.ProgramLanguage.EnterOutputFilePath);
+        string outputDirectoryPath = UserCommunication.GetFilePath(printingImitator, settings, false);
     }
 
     private static void SetSettings(PrintingImitator printingImitator, Settings settings)

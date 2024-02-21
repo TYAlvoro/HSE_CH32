@@ -20,3 +20,4 @@ D:\RiderProjects\ChangeHandler\ChangeHandler\bin\Debug\net6.0\MenuLibrary.dll
 D:\RiderProjects\ChangeHandler\ChangeHandler\bin\Debug\net6.0\MenuLibrary.pdb
 D:\RiderProjects\ChangeHandler\ChangeHandler\bin\Debug\net6.0\ToolLibrary.dll
 D:\RiderProjects\ChangeHandler\ChangeHandler\bin\Debug\net6.0\ToolLibrary.pdb
+D:\RiderProjects\ChangeHandler\ChangeHandler\obj\Debug\net6.0\ChangeHandler.sourcelink.json

@@ -9,3 +9,4 @@ D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.dll
 D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\refint\ToolLibrary.dll
 D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.pdb
 D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ref\ToolLibrary.dll
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.sourcelink.json

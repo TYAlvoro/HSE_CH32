@@ -42,23 +42,26 @@ public static class UserCommunication
     /// Метод, получающий от пользователя путь до файла.
     /// </summary>
     /// <returns>Путь до файла.</returns>
-    public static string GetFilePath(PrintingImitator printingImitator, Settings settings)
+    public static string GetFilePath(PrintingImitator printingImitator, Settings settings, bool file)
     {
         bool correctInput = false;
-        string? filePath;
+        string? path;
         
         // Пока пользователь не введет корректное значение, проверенное методом FileTool.CheckFilePath(),
         // будет требоваться ввод и выводиться сообщение об ошибке.
         do
         {
-            filePath = Console.ReadLine();
+            path = Console.ReadLine();
 
             try
             {
-                //FileTool.CheckFilePath(filePath!);
+                if (file)
+                    FileTool.CheckFilePath(path, settings);
+                else
+                    FileTool.CheckDirectoryPath(path, settings);
                 correctInput = true;
             }
-            catch (Exception ex) when (ex is ArgumentNullException || ex is FileNotFoundException)
+            catch (Exception ex) when (ex is ArgumentNullException || ex is FileNotFoundException || ex is DirectoryNotFoundException)
             {
                 Console.ForegroundColor = settings.ColorScheme.ErrorColor;
                 printingImitator.Print(ex.Message);
@@ -67,7 +70,7 @@ public static class UserCommunication
 
         } while (!correctInput);
 
-        return filePath!;
+        return path!;
     }
     
     /// <summary>
