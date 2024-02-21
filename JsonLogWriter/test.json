@@ -1,0 +1,24 @@
+﻿[
+  {
+    "bookId": "90fbf5d0-ff5a-4ca9-97db-d1d827527c71",
+    "title": "Re-contextualized tertiary portal",
+    "author": "Elijah Miles",
+    "publicationYear": 1953,
+    "genre": "Non-Fiction",
+    "isAvailable": false,
+    "borrowers": [
+      {
+        "borrowerId": "4bea3717-424b-4103-a841-d2adca148b46",
+        "borrowerName": "Ryan Spears",
+        "borrowDate": "2020-04-08",
+        "dueDate": "2020-07-05"
+      },
+      {
+        "borrowerId": "46921ca7-09b5-4433-8c0b-479a0c0ddc4a",
+        "borrowerName": "Carolyn Clayton",
+        "borrowDate": "2023-09-30",
+        "dueDate": "2020-07-24"
+      }
+    ]
+  }
+]

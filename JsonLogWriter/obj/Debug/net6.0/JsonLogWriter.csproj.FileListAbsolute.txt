@@ -1,0 +1,11 @@
+D:\RiderProjects\ChangeHandler\JsonLogWriter\bin\Debug\net6.0\JsonLogWriter.deps.json
+D:\RiderProjects\ChangeHandler\JsonLogWriter\bin\Debug\net6.0\JsonLogWriter.dll
+D:\RiderProjects\ChangeHandler\JsonLogWriter\bin\Debug\net6.0\JsonLogWriter.pdb
+D:\RiderProjects\ChangeHandler\JsonLogWriter\obj\Debug\net6.0\JsonLogWriter.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\ChangeHandler\JsonLogWriter\obj\Debug\net6.0\JsonLogWriter.AssemblyInfoInputs.cache
+D:\RiderProjects\ChangeHandler\JsonLogWriter\obj\Debug\net6.0\JsonLogWriter.AssemblyInfo.cs
+D:\RiderProjects\ChangeHandler\JsonLogWriter\obj\Debug\net6.0\JsonLogWriter.csproj.CoreCompileInputs.cache
+D:\RiderProjects\ChangeHandler\JsonLogWriter\obj\Debug\net6.0\JsonLogWriter.dll
+D:\RiderProjects\ChangeHandler\JsonLogWriter\obj\Debug\net6.0\refint\JsonLogWriter.dll
+D:\RiderProjects\ChangeHandler\JsonLogWriter\obj\Debug\net6.0\JsonLogWriter.pdb
+D:\RiderProjects\ChangeHandler\JsonLogWriter\obj\Debug\net6.0\ref\JsonLogWriter.dll

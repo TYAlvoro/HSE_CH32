@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1g2M3ZHTDNZeUWdKqFN9ICFAb90g5/4vW7CUsu1TCgCt0m4Xm1AxuiecejF2TfDVBPSL5S7ygqJBr512+sNSfg==",
+  "success": true,
+  "projectFilePath": "D:\\RiderProjects\\ChangeHandler\\ChangeHandler\\ChangeHandler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tamik\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Tamik\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Tamik\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Tamik\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}

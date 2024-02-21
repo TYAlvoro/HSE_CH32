@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ChangeHandler/1.0.0": {
+        "dependencies": {
+          "JsonLogWriter": "1.0.0",
+          "MenuLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ChangeHandler.dll": {}
+        }
+      },
+      "JsonLogWriter/1.0.0": {
+        "runtime": {
+          "JsonLogWriter.dll": {}
+        }
+      },
+      "MenuLibrary/1.0.0": {
+        "dependencies": {
+          "ToolLibrary": "1.0.0"
+        },
+        "runtime": {
+          "MenuLibrary.dll": {}
+        }
+      },
+      "ToolLibrary/1.0.0": {
+        "runtime": {
+          "ToolLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChangeHandler/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JsonLogWriter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MenuLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToolLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

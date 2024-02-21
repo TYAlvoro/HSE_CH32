@@ -1,0 +1,11 @@
+D:\RiderProjects\ChangeHandler\ToolLibrary\bin\Debug\net6.0\ToolLibrary.deps.json
+D:\RiderProjects\ChangeHandler\ToolLibrary\bin\Debug\net6.0\ToolLibrary.dll
+D:\RiderProjects\ChangeHandler\ToolLibrary\bin\Debug\net6.0\ToolLibrary.pdb
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.AssemblyInfoInputs.cache
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.AssemblyInfo.cs
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.csproj.CoreCompileInputs.cache
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.dll
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\refint\ToolLibrary.dll
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ToolLibrary.pdb
+D:\RiderProjects\ChangeHandler\ToolLibrary\obj\Debug\net6.0\ref\ToolLibrary.dll

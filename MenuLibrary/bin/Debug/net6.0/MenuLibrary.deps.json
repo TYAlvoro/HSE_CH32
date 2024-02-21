@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MenuLibrary/1.0.0": {
+        "dependencies": {
+          "ToolLibrary": "1.0.0"
+        },
+        "runtime": {
+          "MenuLibrary.dll": {}
+        }
+      },
+      "ToolLibrary/1.0.0": {
+        "runtime": {
+          "ToolLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MenuLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToolLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

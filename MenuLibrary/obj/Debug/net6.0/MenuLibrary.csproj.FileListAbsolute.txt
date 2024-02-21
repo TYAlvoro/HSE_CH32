@@ -1,0 +1,15 @@
+D:\RiderProjects\ChangeHandler\MenuLibrary\bin\Debug\net6.0\MenuLibrary.deps.json
+D:\RiderProjects\ChangeHandler\MenuLibrary\bin\Debug\net6.0\MenuLibrary.dll
+D:\RiderProjects\ChangeHandler\MenuLibrary\bin\Debug\net6.0\MenuLibrary.pdb
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.AssemblyInfoInputs.cache
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.AssemblyInfo.cs
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.csproj.CoreCompileInputs.cache
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.dll
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\refint\MenuLibrary.dll
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.pdb
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\ref\MenuLibrary.dll
+D:\RiderProjects\ChangeHandler\MenuLibrary\bin\Debug\net6.0\ToolLibrary.dll
+D:\RiderProjects\ChangeHandler\MenuLibrary\bin\Debug\net6.0\ToolLibrary.pdb
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.csproj.AssemblyReference.cache
+D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.csproj.CopyComplete

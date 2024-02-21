@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vfQnQUQG7eC0p7DcYRSe3o2uJ09j/LUVxln1uyNOkhMTZuBtyRx5AFj93X9gxBRoRhD8QKfTcP+3zsBnOtG18w==",
+  "success": true,
+  "projectFilePath": "D:\\RiderProjects\\ChangeHandler\\ToolLibrary\\ToolLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tamik\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Tamik\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Tamik\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}
