@@ -35,6 +35,9 @@ public class EnglishLanguage : MainLanguage
     public override string FileNotFound => "The file in the specified path does not exist!";
     public override string DirectoryPathIsEmpty => "The resulting directory path is empty!";
     public override string DirectoryNotFound => "The directory in the specified path does not exist!";
+    public override string BookFieldsCantBeNull => "No field in the description of the book can be missing! Book:";
+    public override string BorrowerFieldsCantBeNull => "Not a single field in the waiting questionnaire can be missing! Name:";
+
 
     public override string ToString()
     {

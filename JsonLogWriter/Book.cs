@@ -13,16 +13,16 @@ public class Book
     public string Author { get; set; }
 
     [JsonPropertyName("publicationYear")]
-    public int PublicationYear { get; set; }
+    public int? PublicationYear { get; set; }
 
     [JsonPropertyName("genre")]
     public string Genre { get; set; }
 
     [JsonPropertyName("isAvailable")]
-    public bool IsAvailable { get; set; }
+    public bool? IsAvailable { get; set; }
     
     [JsonPropertyName("borrowers")]
-    public Borrower[] Borrowers { get; set; }
+    public Borrower[]? Borrowers { get; set; }
 
     public event EventHandler<LibraryEventArgs> Updated; 
     
@@ -54,6 +54,4 @@ public class Book
     {
         throw new NotImplementedException();
     }
-
-    private void CheckNull(){}
 }

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "JsonLogWriter/1.0.0": {
+        "dependencies": {
+          "ToolLibrary": "1.0.0"
+        },
         "runtime": {
           "JsonLogWriter.dll": {}
+        }
+      },
+      "ToolLibrary/1.0.0": {
+        "runtime": {
+          "ToolLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "JsonLogWriter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToolLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -117,7 +117,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\RiderProjects\\ChangeHandler\\ToolLibrary\\ToolLibrary.csproj": {
+                "projectPath": "D:\\RiderProjects\\ChangeHandler\\ToolLibrary\\ToolLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -192,6 +196,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\RiderProjects\\ChangeHandler\\JsonLogWriter\\JsonLogWriter.csproj": {
+                "projectPath": "D:\\RiderProjects\\ChangeHandler\\JsonLogWriter\\JsonLogWriter.csproj"
+              },
               "D:\\RiderProjects\\ChangeHandler\\ToolLibrary\\ToolLibrary.csproj": {
                 "projectPath": "D:\\RiderProjects\\ChangeHandler\\ToolLibrary\\ToolLibrary.csproj"
               }

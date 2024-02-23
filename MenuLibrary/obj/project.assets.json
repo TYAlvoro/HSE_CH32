@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "JsonLogWriter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ToolLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/JsonLogWriter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JsonLogWriter.dll": {}
+        }
+      },
       "ToolLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "JsonLogWriter/1.0.0": {
+      "type": "project",
+      "path": "../JsonLogWriter/JsonLogWriter.csproj",
+      "msbuildProject": "../JsonLogWriter/JsonLogWriter.csproj"
+    },
     "ToolLibrary/1.0.0": {
       "type": "project",
       "path": "../ToolLibrary/ToolLibrary.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "JsonLogWriter >= 1.0.0",
       "ToolLibrary >= 1.0.0"
     ]
   },
@@ -59,6 +78,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\RiderProjects\\ChangeHandler\\JsonLogWriter\\JsonLogWriter.csproj": {
+              "projectPath": "D:\\RiderProjects\\ChangeHandler\\JsonLogWriter\\JsonLogWriter.csproj"
+            },
             "D:\\RiderProjects\\ChangeHandler\\ToolLibrary\\ToolLibrary.csproj": {
               "projectPath": "D:\\RiderProjects\\ChangeHandler\\ToolLibrary\\ToolLibrary.csproj"
             }

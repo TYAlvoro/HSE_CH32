@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChangeHandler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f27ba5608946b12715256492bb364b150aa4682")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ed56c29d3badafeebe713e5eec699f0f7afd8ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChangeHandler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChangeHandler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

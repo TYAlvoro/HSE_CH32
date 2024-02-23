@@ -16,12 +16,16 @@
         }
       },
       "JsonLogWriter/1.0.0": {
+        "dependencies": {
+          "ToolLibrary": "1.0.0"
+        },
         "runtime": {
           "JsonLogWriter.dll": {}
         }
       },
       "MenuLibrary/1.0.0": {
         "dependencies": {
+          "JsonLogWriter": "1.0.0",
           "ToolLibrary": "1.0.0"
         },
         "runtime": {

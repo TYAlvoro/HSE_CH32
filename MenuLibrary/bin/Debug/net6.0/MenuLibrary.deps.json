@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v6.0": {
       "MenuLibrary/1.0.0": {
         "dependencies": {
+          "JsonLogWriter": "1.0.0",
           "ToolLibrary": "1.0.0"
         },
         "runtime": {
           "MenuLibrary.dll": {}
+        }
+      },
+      "JsonLogWriter/1.0.0": {
+        "dependencies": {
+          "ToolLibrary": "1.0.0"
+        },
+        "runtime": {
+          "JsonLogWriter.dll": {}
         }
       },
       "ToolLibrary/1.0.0": {
@@ -23,6 +32,11 @@
   },
   "libraries": {
     "MenuLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JsonLogWriter/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

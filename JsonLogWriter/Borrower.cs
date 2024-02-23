@@ -40,7 +40,4 @@ public class Borrower
     {
         throw new NotImplementedException();
     }
-    
-    private void CheckNull(){}
-
 }

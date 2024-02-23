@@ -36,6 +36,8 @@ public class MainLanguage
     public virtual string FileNotFound => "Файл по указанному пути не существует!";
     public virtual string DirectoryPathIsEmpty => "Полученный путь к директории пуст!";
     public virtual string DirectoryNotFound => "Директория по указанному пути не существует!";
+    public virtual string BookFieldsCantBeNull => "Ни одно поле в описании книги не может отсутствовать! Книга: ";
+    public virtual string BorrowerFieldsCantBeNull => "Ни одно поле в анкете ожидающего не может отсутствовать! Имя: ";
     
     public override string ToString()
     {

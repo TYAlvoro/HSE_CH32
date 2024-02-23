@@ -14,3 +14,5 @@ D:\RiderProjects\ChangeHandler\MenuLibrary\bin\Debug\net6.0\ToolLibrary.pdb
 D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.csproj.AssemblyReference.cache
 D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.csproj.CopyComplete
 D:\RiderProjects\ChangeHandler\MenuLibrary\obj\Debug\net6.0\MenuLibrary.sourcelink.json
+D:\RiderProjects\ChangeHandler\MenuLibrary\bin\Debug\net6.0\JsonLogWriter.dll
+D:\RiderProjects\ChangeHandler\MenuLibrary\bin\Debug\net6.0\JsonLogWriter.pdb

@@ -5,6 +5,9 @@
       "JsonLogWriter/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ToolLibrary": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/JsonLogWriter.dll": {}
         },
@@ -16,6 +19,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "JsonLogWriter": "1.0.0",
           "ToolLibrary": "1.0.0"
         },
         "compile": {

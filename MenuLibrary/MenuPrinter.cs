@@ -1,4 +1,5 @@
-﻿using ToolLibrary;
+﻿using JsonLogWriter;
+using ToolLibrary;
 
 namespace MenuLibrary;
 
@@ -39,13 +40,13 @@ public static class MenuPrinter
 
     }
 
-    private static void ShowInformation(PrintingImitator printingImitator, Settings settings)
+    public static void ShowInformation(PrintingImitator printingImitator, Settings settings)
     {
         Console.ForegroundColor = settings.ColorScheme.MainColor;
         printingImitator.Print(settings.UserName + settings.ProgramLanguage.LetsStart);
         Console.ForegroundColor = settings.ColorScheme.OkColor;
         printingImitator.Print(settings.ProgramLanguage.EnterInputFilePath);
-        string inputFilePath = UserCommunication.GetFilePath(printingImitator, settings, true);
+        JsonTool.CheckFile(printingImitator, settings);
         Console.Clear();
         Console.ForegroundColor = settings.ColorScheme.OkColor;
         printingImitator.Print(settings.ProgramLanguage.EnterOutputFilePath);
