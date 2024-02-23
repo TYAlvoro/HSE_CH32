@@ -12,8 +12,10 @@ internal class Program
         Settings settings = FileTool.OpenFileAndSetSettings();
         PrintingImitator printingImitator = new PrintingImitator(settings.PrintDelay);
         
-        MenuPrinter.ShowGreeting(printingImitator, settings);
+        // MenuPrinter.ShowGreeting(printingImitator, settings);
         (Book[] books, string outputPath) = MenuPrinter.ShowInformation(printingImitator, settings);
+        
+        MenuPrinter.ShowActionMenu(printingImitator, settings, books);
 
     } 
 }

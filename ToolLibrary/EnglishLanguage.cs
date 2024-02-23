@@ -38,6 +38,17 @@ public class EnglishLanguage : MainLanguage
     public override string BookFieldsCantBeNull => "No field in the description of the book can be missing! Book:";
     public override string BorrowerFieldsCantBeNull => "Not a single field in the waiting questionnaire can be missing! Name:";
     public override string CreatedOutputFile => "An output file has been created along the path: ";
+    public override string WhatCanDo => "Choose what you want to do, ";
+    public override string MenuSortId => "1. Sort the list of books by Id.";
+    public override string MenuSortTitle => "2. Sort the list of books by title.";
+    public override string MenuSortAuthor => "3. Sort the list of books by author's name.";
+    public override string MenuSortYear => "4. Sort the list of books by year of publication.";
+    public override string MenuSortGenre => "5. Sort the list of books by genre.";
+    public override string MenuSortAvailable => "6. Sort the list of books by availability level.";
+    public override string MenuChangeData => "7. Change one of the characteristics in the book.";
+    public override string ChooseBook => "First, enter the name of the book you want to work with.";
+
+
 
 
     public override string ToString()

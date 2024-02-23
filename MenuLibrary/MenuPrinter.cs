@@ -62,6 +62,80 @@ public static class MenuPrinter
         return (books, outputPath);
     }
 
+    public static void ShowListOfTitles(PrintingImitator printingImitator, Settings settings, Book[] books)
+    {
+        Console.Clear();
+        
+        string[] titles = new string[books.Length];
+
+        Console.ForegroundColor = settings.ColorScheme.OkColor;
+        for (int i = 0; i < books.Length; i++)
+        {
+            titles[i] = books[i].Title;
+            Console.WriteLine(books[i].Title);
+        }
+        
+        Console.WriteLine();
+        Console.ForegroundColor = settings.ColorScheme.MainColor;
+        printingImitator.Print(settings.ProgramLanguage.ChooseBook);
+    }
+
+    public static void ShowActionMenu(PrintingImitator printingImitator, Settings settings, Book[] books)
+    {
+        Console.ForegroundColor = settings.ColorScheme.MainColor;
+        printingImitator.Print(settings.ProgramLanguage.WhatCanDo + settings.UserName);
+        Console.ForegroundColor = settings.ColorScheme.FirstColor;
+        printingImitator.Print(settings.ProgramLanguage.MenuSortId);
+        Console.ForegroundColor = settings.ColorScheme.SecondColor;
+        printingImitator.Print(settings.ProgramLanguage.MenuSortTitle);
+        Console.ForegroundColor = settings.ColorScheme.ThirdColor;
+        printingImitator.Print(settings.ProgramLanguage.MenuSortAuthor);
+        Console.ForegroundColor = settings.ColorScheme.FirstColor;
+        printingImitator.Print(settings.ProgramLanguage.MenuSortYear);
+        Console.ForegroundColor = settings.ColorScheme.SecondColor;
+        printingImitator.Print(settings.ProgramLanguage.MenuSortGenre);
+        Console.ForegroundColor = settings.ColorScheme.ThirdColor;
+        printingImitator.Print(settings.ProgramLanguage.MenuSortAvailable);
+        Console.ForegroundColor = settings.ColorScheme.SecondColor;
+        printingImitator.Print(settings.ProgramLanguage.MenuChangeData);
+        Console.ForegroundColor = settings.ColorScheme.MainColor;
+        
+        int itemNumber = UserCommunication.GetMenuItem(7, printingImitator, settings);
+
+        switch (itemNumber)
+        {
+            case 1:
+                Array.Sort(books,
+                    (firstBook, secondBook) => string.CompareOrdinal(firstBook.BookId, secondBook.BookId));
+                break;
+            case 2:
+                Array.Sort(books, 
+                    (firstBook, secondBook) => string.CompareOrdinal(firstBook.Title, secondBook.Title));
+                break;
+            case 3:
+                Array.Sort(books, 
+                    (firstBook, secondBook) => string.CompareOrdinal(firstBook.Author, secondBook.Author));
+                break;
+            case 4:
+                Array.Sort(books,
+                    (firstBook, secondBook) => firstBook.PublicationYear.GetValueOrDefault()
+                        .CompareTo(secondBook.PublicationYear.GetValueOrDefault()));
+                break;
+            case 5:
+                Array.Sort(books, 
+                    (firstBook, secondBook) => string.CompareOrdinal(firstBook.Genre, secondBook.Genre));
+                break;
+            case 6:
+                Array.Sort(books,
+                    (firstBook, secondBook) => firstBook.IsAvailable.GetValueOrDefault()
+                        .CompareTo(secondBook.IsAvailable.GetValueOrDefault()));
+                break;
+            case 7:
+                ShowListOfTitles(printingImitator, settings, books);
+                break;
+        }
+    }
+
     private static void SetSettings(PrintingImitator printingImitator, Settings settings)
     {   
         ChangeUserName(printingImitator, settings);

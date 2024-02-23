@@ -20,5 +20,73 @@
         "dueDate": "2020-07-24"
       }
     ]
+  },
+  {
+    "bookId": "569bfe22-0547-4daf-a048-e59fc6408b9e",
+    "title": "Re-contextualized client-server instruction set",
+    "author": "Steven Larson",
+    "publicationYear": 1885,
+    "genre": "Non-Fiction",
+    "isAvailable": true,
+    "borrowers": [
+      {
+        "borrowerId": "cb4f4285-bbfa-42d2-8081-e2b7847284b3",
+        "borrowerName": "Tanya King",
+        "borrowDate": "2022-10-29",
+        "dueDate": "2021-03-20"
+      },
+      {
+        "borrowerId": "8b9ea520-992d-48e7-b2b3-d7639d6d6fc9",
+        "borrowerName": "Michael Newman",
+        "borrowDate": "2020-04-19",
+        "dueDate": "2023-07-29"
+      },
+      {
+        "borrowerId": "7953a1ea-6dc0-45f1-b5b3-a89d26fc6db1",
+        "borrowerName": "George Fitzpatrick",
+        "borrowDate": "2021-11-21",
+        "dueDate": "2021-10-02"
+      },
+      {
+        "borrowerId": "8aa19c8a-c741-4790-a3b0-c730d40e260d",
+        "borrowerName": "Elizabeth Schneider",
+        "borrowDate": "2020-08-29",
+        "dueDate": "2023-10-30"
+      }
+    ]
+  },
+  {
+    "bookId": "e7a6524c-7fb9-447a-aa05-f3c9f745bc49",
+    "title": "Integrated regional instruction set",
+    "author": "Mariah Walls",
+    "publicationYear": 1907,
+    "genre": "Non-Fiction",
+    "isAvailable": false,
+    "borrowers": [
+      {
+        "borrowerId": "8eb32d71-8bcc-4f9a-90ec-61c63d9c76ca",
+        "borrowerName": "Steven Lewis",
+        "borrowDate": "2021-10-12",
+        "dueDate": "2023-09-21"
+      },
+      {
+        "borrowerId": "a69f8fc0-8330-4e5a-a5d1-84efaa52f0a4",
+        "borrowerName": "Aaron David",
+        "borrowDate": "2020-04-07",
+        "dueDate": "2023-03-02"
+      },
+      {
+        "borrowerId": "8a4e2eba-c34d-470d-9848-ec2d8ff983ab",
+        "borrowerName": "Morgan Moore",
+        "borrowDate": "2021-03-02",
+        "dueDate": "2021-10-27"
+      },
+      {
+        "borrowerId": "3c688949-8d79-41f8-a7c0-b76310210301",
+        "borrowerName": "Stephen Calderon",
+        "borrowDate": "2022-08-13",
+        "dueDate": "2022-06-18"
+      }
+    ]
   }
 ]  

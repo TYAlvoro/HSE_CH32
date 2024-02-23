@@ -39,6 +39,16 @@ public class MainLanguage
     public virtual string BookFieldsCantBeNull => "Ни одно поле в описании книги не может отсутствовать! Книга: ";
     public virtual string BorrowerFieldsCantBeNull => "Ни одно поле в анкете ожидающего не может отсутствовать! Имя: ";
     public virtual string CreatedOutputFile => "Создан выходной файл по пути: ";
+    public virtual string WhatCanDo => "Выберите, что Вы хотите сделать, ";
+    public virtual string MenuSortId => "1. Отсортировать список книг по Id.";
+    public virtual string MenuSortTitle => "2. Отсортировать список книг по названию.";
+    public virtual string MenuSortAuthor => "3. Отсортировать список книг по имени автора.";
+    public virtual string MenuSortYear => "4. Отсортировать список книг по году публикации.";
+    public virtual string MenuSortGenre => "5. Отсортировать список книг по жанру.";
+    public virtual string MenuSortAvailable => "6. Отсортировать список книг по уровню доступности.";
+    public virtual string MenuChangeData => "7. Изменить одну из характеристик в книге.";
+    public virtual string ChooseBook => "Для начала введите имя книги, с которой хотите работать.";
+
     
     public override string ToString()
     {
