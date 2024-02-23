@@ -36,21 +36,30 @@ public static class MenuPrinter
         }
 
         Console.Clear();
-        ShowInformation(printingImitator, settings);
-
     }
 
-    public static void ShowInformation(PrintingImitator printingImitator, Settings settings)
+    public static (Book[], string) ShowInformation(PrintingImitator printingImitator, Settings settings)
     {
         Console.ForegroundColor = settings.ColorScheme.MainColor;
         printingImitator.Print(settings.UserName + settings.ProgramLanguage.LetsStart);
         Console.ForegroundColor = settings.ColorScheme.OkColor;
-        printingImitator.Print(settings.ProgramLanguage.EnterInputFilePath);
-        JsonTool.CheckFile(printingImitator, settings);
+        printingImitator.Print(settings.ProgramLanguage.EnterInputFilePath); 
+        Book[] books = JsonTool.CheckFile(printingImitator, settings, out string fileName);
         Console.Clear();
         Console.ForegroundColor = settings.ColorScheme.OkColor;
         printingImitator.Print(settings.ProgramLanguage.EnterOutputFilePath);
         string outputDirectoryPath = UserCommunication.GetFilePath(printingImitator, settings, false);
+        fileName = fileName.Split(".")[0] + "_tmp.json";
+        string outputPath = Path.Combine(outputDirectoryPath, fileName);
+        File.Create(outputPath);
+
+        Console.ForegroundColor = settings.ColorScheme.MainColor;
+        printingImitator.Print(settings.ProgramLanguage.CreatedOutputFile + outputPath);
+        
+        Thread.Sleep(1500);
+        Console.Clear();
+        
+        return (books, outputPath);
     }
 
     private static void SetSettings(PrintingImitator printingImitator, Settings settings)
@@ -60,8 +69,9 @@ public static class MenuPrinter
         ChangeLanguage(printingImitator, settings);
         ChangeDelay(printingImitator, settings);
         printingImitator.Print(settings.ProgramLanguage.AllChangesAccepted);
-        FileTool.CreateSettingsFile();
+        FileTool.CreateFile("settings.dat");
         FileTool.WriteSettingsToFile(settings);
+        Environment.Exit(0);
     }
 
     private static void ChangeUserName(PrintingImitator printingImitator, Settings settings)

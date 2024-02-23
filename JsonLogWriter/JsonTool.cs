@@ -5,7 +5,7 @@ namespace JsonLogWriter;
 
 public static class JsonTool
 {
-    public static Book[] CheckFile(PrintingImitator printingImitator, Settings settings)
+    public static Book[] CheckFile(PrintingImitator printingImitator, Settings settings, out string fileName)
     {
         bool correctFile = false;
         Book[] books = Array.Empty<Book>();
@@ -13,6 +13,7 @@ public static class JsonTool
         do
         {
             string filePath = UserCommunication.GetFilePath(printingImitator, settings, true);
+            fileName = Path.GetFileName(filePath);
             string jsonString = File.ReadAllText(filePath);
             
             try

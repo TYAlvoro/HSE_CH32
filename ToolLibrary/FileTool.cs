@@ -8,7 +8,7 @@ public static class FileTool
         
         if (!File.Exists("settings.dat"))
         {
-            CreateSettingsFile();
+            CreateFile("settings.dat");
             WriteSettingsToFile(settings);
             return settings;
         }
@@ -26,9 +26,9 @@ public static class FileTool
         return settings;
     }
 
-    public static void CreateSettingsFile()
+    public static void CreateFile(string filePath)
     {
-        using (FileStream fileStream = new FileStream("settings.dat", FileMode.Create))
+        using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
         {
         }
     }
