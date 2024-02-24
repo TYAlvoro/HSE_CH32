@@ -1,11 +1,19 @@
 ﻿namespace ToolLibrary;
 
+/// <summary>
+/// Класс для удобной работы с файлами.
+/// </summary>
 public static class FileTool
 {
+    /// <summary>
+    /// Считывание настроек.
+    /// </summary>
+    /// <returns>Объект настроек.</returns>
     public static Settings OpenFileAndSetSettings()
     {
         Settings settings = new Settings();
         
+        // Создание файла при первом запуске программы.
         if (!File.Exists("settings.dat"))
         {
             CreateFile("settings.dat");
@@ -13,6 +21,7 @@ public static class FileTool
             return settings;
         }
         
+        // Считывание файла с настройками.
         using (StreamReader streamReader = new StreamReader("settings.dat"))
         {
             settings.PrintDelay = int.Parse(streamReader.ReadLine()!);
@@ -26,6 +35,10 @@ public static class FileTool
         return settings;
     }
 
+    /// <summary>
+    /// Безопасное создание файла.
+    /// </summary>
+    /// <param name="filePath">Путь до файла.</param>
     public static void CreateFile(string filePath)
     {
         using (FileStream fileStream = new FileStream(filePath, FileMode.Create))
@@ -33,6 +46,10 @@ public static class FileTool
         }
     }
 
+    /// <summary>
+    /// Запись настроек.
+    /// </summary>
+    /// <returns>Объект настроек.</returns>
     public static void WriteSettingsToFile(Settings settings)
     {
         using (StreamWriter streamWriter = new StreamWriter("settings.dat"))
@@ -44,6 +61,13 @@ public static class FileTool
         }
     }
     
+    /// <summary>
+    /// Проверка корректности пути до файла.
+    /// </summary>
+    /// <param name="filePath">Путь до файла.</param>
+    /// <param name="settings">Объект настроек.</param>
+    /// <exception cref="ArgumentNullException">Пустой путь.</exception>
+    /// <exception cref="FileNotFoundException">Не найден файл.</exception>
     public static void CheckFilePath(string? filePath, Settings settings)
     {
         // Если путь пустой, то выбрасывается исключение.
@@ -58,6 +82,13 @@ public static class FileTool
         }
     }
     
+    /// <summary>
+    /// Проверка корректности пути до директории.
+    /// </summary>
+    /// <param name="directoryPath">Путь до директории.</param>
+    /// <param name="settings">Объект настроек.</param>
+    /// <exception cref="ArgumentNullException">Пустой путь.</exception>
+    /// <exception cref="DirectoryNotFoundException">Не найдена директория.</exception>
     public static void CheckDirectoryPath(string? directoryPath, Settings settings)
     {
         // Если путь пустой, то выбрасывается исключение.

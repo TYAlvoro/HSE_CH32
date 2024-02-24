@@ -1,6 +1,12 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 namespace JsonLogWriter;
 
+/// <summary>
+/// Класс, описывающий информацию о книге.
+/// Некоторые поля осознанно сделаны nullable, так как это выгодно в дальнейшей логике программы,
+/// однако код не позволяет работать с null хотя бы в одном из полей, следовательно требования выполнены.
+/// </summary>
 public class Book
 {   
     [JsonPropertyName("bookId")]
@@ -22,14 +28,14 @@ public class Book
     public bool? IsAvailable { get; set; }
     
     [JsonPropertyName("borrowers")]
-    public Borrower[]? Borrowers { get; set; }
+    public List<Borrower>? Borrowers { get; set; }
 
     public event EventHandler<LibraryEventArgs> Updated; 
     
     public Book() {}
 
     public Book(string bookId, string title, string author, int publicationYear,
-        string genre, bool isAvailable, Borrower[] borrowers)
+        string genre, bool isAvailable, List<Borrower> borrowers)
     {
         BookId = bookId;
         Title = title;
@@ -40,18 +46,37 @@ public class Book
         Borrowers = borrowers;
     }
 
+    /// <summary>
+    /// Запуск события.
+    /// </summary>
     public void RaiseEvent()
     {
+        // В аргументы записывается дата и время изменений.
         TimeSpan timeWithoutMilliseconds = new TimeSpan(DateTime.Now.TimeOfDay.Hours, 
             DateTime.Now.TimeOfDay.Minutes, DateTime.Now.TimeOfDay.Seconds);
         LibraryEventArgs eventArgs = new LibraryEventArgs(DateTime.Today, timeWithoutMilliseconds);
         OnUpdateAcquired(this, eventArgs);
     }
 
+    /// <summary>
+    /// Непосредственное создание события.
+    /// </summary>
+    /// <param name="sender">Адресант события.</param>
+    /// <param name="args">Аргументы события.</param>
     public void OnUpdateAcquired(object sender, LibraryEventArgs args) => Updated?.Invoke(sender, args);
 
-    public void ToJson()
+    /// <summary>
+    /// Представление класса в JSON формате.
+    /// </summary>
+    /// <returns>JSON строка.</returns>
+    public string ToJson()
     {
-        throw new NotImplementedException();
+        // "Красивый" JSON формат.
+        var options = new JsonSerializerOptions
+        {
+            WriteIndented = true
+        };
+
+        return JsonSerializer.Serialize(this, options);
     }
 }

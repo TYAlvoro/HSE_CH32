@@ -1,5 +1,8 @@
 ﻿namespace JsonLogWriter;
 
+/// <summary>
+/// Класс-наследник EventArgs для хранения даты и времени изменений.
+/// </summary>
 public class LibraryEventArgs: EventArgs
 {
     public DateTime UpdateDate { get; set; }

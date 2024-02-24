@@ -1,4 +1,8 @@
 ﻿namespace ToolLibrary;
+
+/// <summary>
+/// Класс для хранения фраз на русском языке.
+/// </summary>
 public class MainLanguage
 {
     public virtual string Greeting => "Привет, ";
@@ -48,6 +52,21 @@ public class MainLanguage
     public virtual string MenuSortAvailable => "6. Отсортировать список книг по уровню доступности.";
     public virtual string MenuChangeData => "7. Изменить одну из характеристик в книге.";
     public virtual string ChooseBook => "Для начала введите имя книги, с которой хотите работать.";
+    public virtual string TitleIsIncorrect => "Некорректное название книги!";
+    public virtual string IncorrectValue => "Некорректное значение!";
+    public virtual string ChooseItem => "Выберите значение для редактирования";
+    public virtual string Title => "1. Название книги";
+    public virtual string Author => "2. Автор";
+    public virtual string Year => "3. Год публикации";
+    public virtual string Genre => "4. Жанр";
+    public virtual string Available => "5. Доступность";
+    public virtual string InputValue => "Введите новое значение...";
+    public virtual string EventWrite => "Значения менялись быстро, поэтому изменения зафиксированы в выходном файле.";
+    public virtual string WantToSave => "Не хотите ли сохранить изменения в файл?";
+    public virtual string ChangesSaves => "Изменения сохранены в указанный файл.";
+    public virtual string EnterOutputPath => "Введите путь до файла.";
+    public virtual string Quit => "8. Выйти из программы.";
+
 
     
     public override string ToString()

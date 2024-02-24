@@ -1,5 +1,8 @@
 ﻿namespace ToolLibrary;
 
+/// <summary>
+/// Класс для хранения настроек приложения.
+/// </summary>
 public class Settings
 {
     public int PrintDelay { get; set; } = 30;

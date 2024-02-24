@@ -1,5 +1,8 @@
 ﻿namespace ToolLibrary;
 
+/// <summary>
+/// Класс для хранения фраз на английском языке.
+/// </summary>
 public class EnglishLanguage : MainLanguage
 {
     public override string Greeting => "Hello, ";
@@ -47,7 +50,20 @@ public class EnglishLanguage : MainLanguage
     public override string MenuSortAvailable => "6. Sort the list of books by availability level.";
     public override string MenuChangeData => "7. Change one of the characteristics in the book.";
     public override string ChooseBook => "First, enter the name of the book you want to work with.";
-
+    public override string TitleIsIncorrect => "Incorrect title of the book!";
+    public override string IncorrectValue => "Incorrect value!";
+    public override string ChooseItem => "Select the value to edit";
+    public override string Title => "1. Title";
+    public override string Author => "2. Author";
+    public override string Year => "3. Year";
+    public override string Genre => "4. Genre";
+    public override string Available => "5. Available";
+    public override string InputValue => "Enter a new value...";
+    public override string EventWrite => "The values changed quickly, so the changes are recorded in the output file.";
+    public override string WantToSave => "Would you like to save the changes to a file?";
+    public override string ChangesSaves => "The changes are saved to the specified file.";
+    public override string EnterOutputPath => "Enter the path to the file.";
+    public override string Quit => "8. Quit.";
 
 
 

@@ -1,5 +1,8 @@
 ﻿namespace ToolLibrary;
 
+/// <summary>
+/// Класс для хранения значений теплой цветовой схемы.
+/// </summary>
 public class MainColorScheme
 {
     public virtual ConsoleColor MainColor => ConsoleColor.DarkYellow;

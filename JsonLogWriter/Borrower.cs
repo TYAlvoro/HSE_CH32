@@ -1,7 +1,11 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace JsonLogWriter;
 
+/// <summary>
+/// Класс, хранящий информацию о должнике.
+/// </summary>
 public class Borrower
 {
     [JsonPropertyName("borrowerId")]
@@ -28,16 +32,37 @@ public class Borrower
         DueDate = dueDate;
     }
     
+    /// <summary>
+    /// Запуск события.
+    /// </summary>
     public void RaiseEvent()
     {
-        LibraryEventArgs eventArgs = new LibraryEventArgs(DateTime.Today, DateTime.Now.TimeOfDay);
+        // В аргументы записывается дата и время изменений.
+        TimeSpan timeWithoutMilliseconds = new TimeSpan(DateTime.Now.TimeOfDay.Hours, 
+            DateTime.Now.TimeOfDay.Minutes, DateTime.Now.TimeOfDay.Seconds);
+        LibraryEventArgs eventArgs = new LibraryEventArgs(DateTime.Today, timeWithoutMilliseconds);
         OnUpdateAcquired(this, eventArgs);
     }
-    
+
+    /// <summary>
+    /// Непосредственное создание события.
+    /// </summary>
+    /// <param name="sender">Адресант события.</param>
+    /// <param name="args">Аргументы события.</param>
     public void OnUpdateAcquired(object sender, LibraryEventArgs args) => Updated?.Invoke(sender, args);
-    
-    public void ToJson()
+
+    /// <summary>
+    /// Представление класса в JSON формате.
+    /// </summary>
+    /// <returns>JSON строка.</returns>
+    public string ToJson()
     {
-        throw new NotImplementedException();
+        // "Красивый" JSON формат.
+        var options = new JsonSerializerOptions
+        {
+            WriteIndented = true
+        };
+
+        return JsonSerializer.Serialize(this, options);
     }
 }

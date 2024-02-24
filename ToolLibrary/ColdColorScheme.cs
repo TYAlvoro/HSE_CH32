@@ -1,5 +1,8 @@
 ﻿namespace ToolLibrary;
 
+/// <summary>
+/// Класс для хранения значений холодной цветовой схемы.
+/// </summary>
 public class ColdColorScheme: MainColorScheme
 {
     public override ConsoleColor MainColor => ConsoleColor.Yellow;
